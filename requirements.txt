@@ -1,2 +1,2 @@
-gunicorn==19.7.1
+gunicorn==19.9.0
 six==1.16.0
