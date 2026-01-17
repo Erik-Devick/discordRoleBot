@@ -1,1 +1,1 @@
-# no external dependencies
+gunicorn==19.7.1
