@@ -7,6 +7,9 @@ import os
 
 
 load_dotenv()
+token = os.getenv("token")
+if not token:
+    raise RuntimeError("Discord token not found")
 
 def getColor(color_input):
     if re.match(r'^#(?:[0-9a-fA-F]{6})$', color_input):
@@ -68,4 +71,4 @@ async def roleColor(ctx,color:str):
 
 
 # Run the bot with your token
-bot.run(os.getenv("token").strip())
+bot.run(token)
